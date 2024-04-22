@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhak Chabeni | Web developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    
+    
+   
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+           
+            
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+           
+           
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+           
+             
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+             
+              
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="assets/images/profile.jpg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="abdelhak_chabeni">Abdelhak Chabeni</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s" onclick="location.href='mailto:abdelhak_chabeni@outlook.com';">
+                        <i class="ri-at-line"></i> Hire Me
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up"> Hi, I'm Abdelhak Chabeni. I build things for the web</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">I'm a Web Developer based in Tunis, Tunisia. I enjoy working
+                        on every aspect of web development, from the user interface to the
+                        server logic.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('assets/pdf/resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    
+                    <h3 class="about-me font_w_font_s1 fade_up">I am a passionate and formally trained Web Developer residing in Tunis, Tunisia. 
+                        At the age of 22, I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth. 
+                        From a young age, I was fascinated by technology and its ability to shape the world around us. This curiosity led me to explore programming and web development, where I quickly discovered my knack for creating dynamic and user-friendly applications. 
+                        As a Web Developer, I possess a diverse skill set that allows me to handle various aspects of web development.
+                    </h3>
+                
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+               
+                <!-- ======================================= Services Section ================================== -->
+               
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my skills</h2>
+                    </div>
+                    
+                    <h3 class="passionate-skill font_w_font_s1 ">Equipped with robust technical abilities and fluency in multiple spoken languages.
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">Language Skills</h3>
+                    <div class="skill_circle_lang">
+                        <div>
+                           
+                            <h2 class="subject">Arabic  </h2>
+                        </div>
+                        <div>
+                            
+                            <h2 class="subject">English</h2>
+                        </div>
+                        <div>
+                            
+                            <h2 class="subject">French</h2>
+                        </div>
+                       
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Hard Skills</h3>
+                    <div class="skill_circle_main">
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/php.png" alt="figma">
+                                <h4 class="hard_skill_counter font_w_font_s1">80%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Php</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/bootstrap.png" alt="bootstrap">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Bootstrap</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/css.png" alt="css">
+                                <h4 class="hard_skill_counter font_w_font_s1">80%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">CSS</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/python.png" alt="flutter">
+                                <h4 class="hard_skill_counter font_w_font_s1">55%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Python</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/mysql.png" alt="framer">
+                                <h4 class="hard_skill_counter font_w_font_s1">70%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">MYSQL</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/html.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">HTML</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/wordpress.png" alt="wordpress">
+                                <h4 class="hard_skill_counter font_w_font_s1">50%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">WordPress</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="assets/images/javascript.png" alt="kotline">
+                                <h4 class="hard_skill_counter font_w_font_s1">65%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Javascript</h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                   
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="assets/images/Project_page.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Veterinary clinic</h3>
+                                        <p class="content-text">Website</p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Veterinary clinic</h4>
+                                <p class="project_name_sub font_w_font_s1">Website</p>
+                            </div>
+                      
+                          
+                        </div>
+                
+                    </div>
+                </section>
+               
+             
+                <!-- ======================================= Blog Section End  ================================== -->
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contact">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact me</h2>
+                    </div>
+                    
+           
+                
+                    <div>
+                        <h3 class="moswa touch">Get in touch!</h3>
+                        <div class="contact_number_main">
+                            <img src="assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:+12345678899">+21696827971</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="mailto:hello@olivia.com">abdelhak_chabeni@outlook.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="assets/images/map.svg" alt="map">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">Tunis, Tunisia</a>
+                            </h4>
+                        </div>
+                    </div>
+                   
+                    <h5 class="copyright">© Abdelhak 2024. All rights reserved 
+                        
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                
+            <li>  <a class="fbtn github" href="https://github.com/Shabeni" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <iframe class="pop-up-video" width="560" height="315" src="https://www.youtube.com/embed/XqOklmqYTNA?si=g5jIeWSP-FGu5zhn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Veterinary clinic appointment booking </h3>
+                        
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Technologies used:</p>
+                        
+
+                        <p class="cuberto">HTML</p><span class="cuberto">|</span>
+                        <p class="cuberto">Css</p><span class="cuberto">|</span>
+                        <p class="cuberto">Javascript</p><span class="cuberto">|</span>
+                        <p class="cuberto">jQuery</p><span class="cuberto">|</span>
+                        <p class="cuberto">Bootstrap</p><span class="cuberto">|</span>
+                        <p class="cuberto">Php</p><span class="cuberto">|</span>
+                        <p class="cuberto">Ajax</p><span class="cuberto">|</span>
+                        <p class="cuberto">MySQL</p>
+                    
+                    </div>
+                  
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    This website offers a comprehensive management system for a veterinary clinic, encompassing appointment booking, admin panel, and secretary access. 
+                    Additionally, the website is designed with a responsive layout for optimal viewing and interaction across a wide range of devices. 
+                    It also prioritizes security to ensure the protection of user data and privacy.
+                </p>
+        
+            <div class="popup_gallery">
+                <div class="gallery">
+                
+                   
+                    <div>
+                        <img  src="assets/images/project2.png"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img  src="assets/images/project3.png"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img  src="assets/images/project4.png"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img  src="assets/images/project1.png"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img  src="assets/images/project6.png"
+                            alt="project_sub_images1">
+                    </div>
+                  
+                </div>
+            
+            </div>
+                
+             
+                <div class="pop-up-footer">
+                   
+                   
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn github" href="https://github.com/Shabeni/veterinary-clinic-website" target="_blank">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                      
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Blog PopUp Window  ================================== -->
+       
+    </div>
+    <!-- ======================================= Portfolio gallery ================================== -->
+
+    <script src="assets/javascript/jquery.min.js"></script>
+    <script src="assets/javascript/magnific-popup.min.js"></script>
+   
+    <script src="assets/javascript/cursor.js"></script>
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+   
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
