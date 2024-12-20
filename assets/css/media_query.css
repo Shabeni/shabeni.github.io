@@ -14,7 +14,71 @@
         margin: 0 0 0 60px;
     }
 }
+/* New media query for larger screens (4K) */
+@media (min-width: 3840px) {
+    .imgBox video {
+        height: auto;
+        width: 100%;
+        max-width: 1200px; /* Set a max width for video */
+    }
 
+    .imgBox {
+        height: auto;
+        width: 100%;
+        max-width: 900px; /* Max width for the image box */
+    }
+
+    .olivia-img {
+        border-radius: 50px;
+        max-width: 100%; /* Ensure the image scales within its container */
+    }
+
+
+    .hire_me {
+        width: 640px; /* Increase the width for larger screens */
+    }
+
+    .olivia_moswa {
+        font-size: 120px; /* Increase font size for 4K screens */
+    }
+
+    .designer {
+        margin-bottom: 4px; /* Increase space below the designer */
+    }
+
+    .bio_contain {
+        padding: 20px 130px 30px 130px; /* Increase padding */
+    }
+
+    .olivia_bio {
+        border-radius: 40px;
+        margin-bottom: 50px; /* Increase space between bio elements */
+    }
+  
+    .overlay .content2 {
+        height: 80vh; /* Adjusted height to fit the large screen proportionally */
+       
+        width: 80%; /* Ensure the content doesn't stretch too far */
+    }
+    .overlay p {
+         /* Adjusted height to fit the large screen proportionally */
+       
+        font-size: 1.2rem; /* Ensure the content doesn't stretch too far */
+    }
+    section#card_main {
+        font-size: 3.5rem; 
+    }
+    #icetab-content{
+        max-width: 1000px; 
+        min-height: 700px;
+    }
+    
+
+    #icetab-content  h3 {
+        font-size: 1.7rem; /* Increase heading size */
+    }
+  
+}
 @media(max-width:1600px) {
     .imgBox video {
         height: 100%;
