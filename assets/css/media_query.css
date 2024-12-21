@@ -29,7 +29,7 @@
     }
 
     .olivia-img {
-        border-radius: 50px;
+        border-radius: 290px 40px 40px 40px;
         max-width: 100%; /* Ensure the image scales within its container */
     }
 
@@ -51,7 +51,10 @@
     }
 
     .olivia_bio {
-        border-radius: 40px;
+       position: relative;
+        border-radius: 290px 40px 40px 40px;
+        border: 2px solid var(--circle-img-border);
+        padding: 20px;
         margin-bottom: 50px; /* Increase space between bio elements */
     }
   
