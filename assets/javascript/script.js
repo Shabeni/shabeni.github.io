@@ -150,13 +150,12 @@ $(document).ready(function () {
 });
 // View More View Less btn End
 
-// blog Page Pop Up
-$(document).ready(function () {
-    $('.trigger').click(function () {
-        $('.modal-wrapper').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur');
-        return false;
-    });
+// blog Page Pop Up (delegated to support dynamic content)
+$(document).on('click', '.trigger', function () {
+    if ($(this).hasClass('md-article-trigger')) return; // handled separately
+    $('.modal-wrapper').toggleClass('open');
+    $('.page-wrapper').toggleClass('blur');
+    return false;
 });
 // blog Page Pop Up End
 
