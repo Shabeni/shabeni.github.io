@@ -1501,6 +1501,10 @@ button:hover .shopping_bag {
 
 .figma {
     filter: var(--nav-menu-icon);
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
 }
 
 .hard_skill_group:hover .figma {
@@ -1747,7 +1751,8 @@ button:hover .shopping_bag {
 .blog_section_main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 60px;
 }
 
 .blog_date {
@@ -1810,11 +1815,11 @@ button:hover .shopping_bag {
 }
 
 .blog_img7 {
-    background-image: url('../images/blog_img1.png');
+    background-image: url('../images/seats_managment.png');
 }
 
 .blog_img8 {
-    background-image: url('../images/blog_img2.png');
+    background-image: url('../images/ai.png');
 }
 
 .blog_img:hover {
@@ -1852,7 +1857,8 @@ button:hover .shopping_bag {
 .view_more {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 60px;
     padding-top: 30px;
 }
 
@@ -2740,3 +2746,38 @@ ul {
     }
 }
 
+/* Blog code block styling */
+#blog-article-content pre[class*="language-"],
+#blog-article-content pre {
+  background: #f5f2f0;
+  border: 1px solid rgba(2, 5, 10, 0.08);
+  border-radius: 8px;
+  padding: 16px 18px;
+  overflow: auto;
+  line-height: 1.55;
+  box-shadow: 0 1px 0 rgba(2, 5, 10, 0.02);
+}
+
+#blog-article-content code[class*="language-"],
+#blog-article-content code.language-text {
+  background: transparent;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.95em;
+  text-shadow: none;
+}
+
+/* Inline code (not inside pre) */
+#blog-article-content :not(pre) > code {
+  background: #f5f2f0;
+  border: 1px solid rgba(2, 5, 10, 0.08);
+  border-radius: 6px;
+  padding: 0.15em 0.35em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Keep same chip look in dark mode */
+.dark-mode #blog-article-content pre[class*="language-"],
+.dark-mode #blog-article-content :not(pre) > code {
+  background: #f5f2f0;
+  border-color: rgba(255, 255, 255, 0.08);
+}
