@@ -1,7 +1,7 @@
 // Blog articles content - works with file:// protocol
 const BLOG_ARTICLES = {
     4: `<h3 class="logo_design">Building a Fair Seat Reservation System: How I Prevented Double-Booking with Pessimistic Locking and Timed Holds</h3>
-<h4 class="graphic font_w_font_s1">engineering | October 13, 2025</h4>
+<h4 class="graphic font_w_font_s1">engineering | October 19, 2025</h4>
 <div class="blog_pop_up_main">
     <img class="blog_pop_up" src="assets/images/seats_managment.png" alt="blog_pop_up">
 </div>
@@ -397,7 +397,7 @@ protected function schedule(Schedule $schedule): void
 </div>`,
     
     10: `<h3 class="logo_design">The Full Journey: How a User Message Becomes a Bookable Train Schedule</h3>
-<h4 class="graphic font_w_font_s1">product & ai | October 13, 2025</h4>
+<h4 class="graphic font_w_font_s1">product & ai | October 19, 2025</h4>
 <div class="blog_pop_up_main">
     <img class="blog_pop_up" src="assets/images/ai.png" alt="blog_pop_up">
 </div>
